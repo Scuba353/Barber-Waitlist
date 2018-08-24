@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" href="barber.css">
+
+    <title>Wait-List</title>
+
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+    </script>
+</head>
+
+
+<body>
+    
+    <div class="row">
+
+        <div class="flex-container col s3 m3">
+            <div class="unit">
+                <div class="pole-unit vary">
+                    <div class="pole-top">
+                        <div class="ball"></div>
+                        <div class="cover"></div>
+                        <div class="band"></div>
+                        <div class="thin-band"></div>
+                    </div>
+                    <div class="pole-middle">
+                        <div class="container">
+                            <div class="pole"></div>
+                        </div>
+                    </div>
+                    <div class="pole-bottom">
+                        <div class="thin-band"></div>
+                        <div class="band"></div>
+                        <div class="cover"></div>
+                        <div class="ball"></div>
+                    </div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+
+        <h1 class="col s3 m6 indigo-text">Barber Wait-List</h1>
+        <h4 class="col s0 m6">Please sign in and take a seat <br> It won't be <span class="pun">long</span> now!</h4>
+
+        <div class="flex-container s3 m3 offset-m10">
+                <div class="unit">
+                    <div class="pole-unit vary">
+                        <div class="pole-top">
+                            <div class="ball"></div>
+                            <div class="cover"></div>
+                            <div class="band"></div>
+                            <div class="thin-band"></div>
+                        </div>
+                        <div class="pole-middle">
+                            <div class="container">
+                                <div class="pole"></div>
+                            </div>
+                        </div>
+                        <div class="pole-bottom">
+                            <div class="thin-band"></div>
+                            <div class="band"></div>
+                            <div class="cover"></div>
+                            <div class="ball"></div>
+                        </div>
+                    </div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+
+    </div>
+
+ <h3>Add Your Name to the list:</h3>
+
+  <div class="row">
+      <div class="row">
+        <div class="input-field col s3">
+            <input id="first_name" type="text" placeholder="First Name">
+            <!-- <label for="first_name">First Name</label> -->
+        </div>
+        <div class="input-field col s3">
+            <input id="last_name" type="text" placeholder="Last Name">
+            <!-- <label for="last_name">Last Name</label> -->
+        </div>
+
+        <div class="input-field col s4">
+        <form >
+                <input class="with-gap" name="group1" type="radio" id="cut" />
+                <label for="cut">Cut Only</label>
+
+                <input class="with-gap" name="group1" type="radio" id="shave" />
+                <label for="shave">Shave Only</label>
+            
+                <input class="with-gap" name="group1" type="radio" id="both"  />
+                <label for="both">Cut and Shave</label>
+            
+            
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+        <!-- <div class="input-field col s3">
+            <input id="time" type="text" class="timepicker">>
+            <label for="time">Current Time</label>
+        </div> -->
+    
+        <button class="input-field waves-effect waves-light btn" id="add-client">Sign-in</button>
+      </div>
+  </div>
+
+
+
+
+  <h2>Next in line: <span id="next-client"></span></h2>
+  <button id="next-song">Next</button>
+
+  <!-- <h3>Add a Song:</h3>
+  <input id="artist-value" type="text" placeholder="Artist Name">
+  <input id="song-value" type="text" placeholder="Song Title">
+  <button id="add-song">Add Song</button>
+
+    
+    <h2>Next up: <span id="curr-client"></span></h2>
+    <button id="next-song">Next</button> -->
+
+
+   
+
+    <script src="Queues.js"></script>
+    <script src="Class.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <!-- <script src="Class.js"></script> -->
+
+    
+</body>
+</html>
