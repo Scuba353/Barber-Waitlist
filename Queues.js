@@ -71,14 +71,19 @@ SLQueue.prototype.dequeue = function(){
 
 // //TRAVERSE
 // SLQueue.prototype.traverse = function(){
-//     //head is empty
-//     if(this.isEmpty()){
-//         return -1
+//     var linearr= []
+//     var one= WaitList.head;
+//     if(one == null){
+//         linearr.push("No Wait") 
 //     }
-//     //head is not empty
-//     var curr = this.head;
-//     while(curr.next){
-//         curr = curr.next;
+//     else{
+//         while(one.next != null){
+//             var nextperson = one.next.val.f_name
+//             linearr.push(nextperson)
+//             console.log(linearr)
+//             one= one.next
+//             //line.innerHTML += "<br>" + nextperson + "<br>"
+//         }
 //     }
-//         //traverse-collect values
+// return linearr
 // }

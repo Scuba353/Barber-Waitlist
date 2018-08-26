@@ -10,12 +10,20 @@ body {
   box-sizing: border-box;
 }
 
-#add-client{
+#add-client {
     background-color: #df5545;
 }
+#next-client {
+  background-color: #df5545;
+}
+.head{
+  color: #22729a;
+}
+
 .pun{
     color: #df5545;
     text-decoration: underline #df5545;
+    font-style: italic;
 }
 .flex-container {
  

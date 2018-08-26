@@ -3,7 +3,7 @@ var WaitList = new SLQueue();
 
 
 renderClient();
-//renderList();
+renderList();
 
 var curr = document.getElementById("curr-client"),
     add =  document.getElementById("add-client"),
@@ -18,14 +18,14 @@ add.addEventListener("click", function(){
     firstname.value = "";
     lastname.value = "";
     renderClient();
-    //renderList();
+    renderList();
 
 })
 
 next.addEventListener("click", function(){
     WaitList.dequeue();
     renderClient();
-    //renderList();
+    renderList();
 })  
 
 function renderClient(){
@@ -35,17 +35,19 @@ function renderClient(){
         : `${WaitList.head.val.f_name} ${WaitList.head.val.l_name}`;
     
     curr.innerText = currclient;
-    renderList();
+    //renderList();
 }
 
 function renderList(){
     var line =document.getElementById("curr-list")
+    //line.innerHTML= ''
     var linearr= []
     var one= WaitList.head;
-    if(one == null){
-        line.innerText= "No Wait"
+    if(one == null || one.next == null){
+        line.innerHTML= "No Line"
     }
     else{
+        line.innerHTML= ''
         while(one.next != null){
             var nextperson = one.next.val.f_name
             linearr.push(nextperson)
@@ -57,7 +59,8 @@ function renderList(){
 
         for(i=0; i<linearr.length; i++){
             console.log(linearr[i])
-            line.innerText += linearr[i]
+            line.innerHTML +=  linearr[i] + "<br>"
+            //line.innerText += linearr[i]
         }
 
 }
