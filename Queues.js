@@ -8,10 +8,11 @@ function SLNode(val){
     this.next= null;
 }
 
-function Client(f_name, l_name){
+function Client(f_name, l_name, service){
     console.log("creating new client")
     this.f_name = f_name;
     this.l_name = l_name;
+    // this.service= service;
 }
 
 //SSL Queue
@@ -22,7 +23,7 @@ function SLQueue(){
         return this.head === null;
     }
     this.hasOne = function(){
-        return (!this.isEmpty()&& this.head.next == null)
+        return (!this.isEmpty() && this.head.next == null)
     }
 }
 
@@ -58,7 +59,7 @@ SLQueue.prototype.dequeue = function(){
     var valToReturn = this.head.val;
     
     //single node
-    if(this.hadOne()){
+    if(this.hasOne()){
         this.head= null;
         this.tail= null;
         return valToReturn
@@ -68,3 +69,16 @@ SLQueue.prototype.dequeue = function(){
     return valToReturn
 }
 
+// //TRAVERSE
+// SLQueue.prototype.traverse = function(){
+//     //head is empty
+//     if(this.isEmpty()){
+//         return -1
+//     }
+//     //head is not empty
+//     var curr = this.head;
+//     while(curr.next){
+//         curr = curr.next;
+//     }
+//         //traverse-collect values
+// }
