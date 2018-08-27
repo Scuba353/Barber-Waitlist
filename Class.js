@@ -35,13 +35,10 @@ function renderClient(){
         : `${WaitList.head.val.f_name} ${WaitList.head.val.l_name}`;
     
     curr.innerText = currclient;
-    //renderList();
 }
 
 function renderList(){
     var line =document.getElementById("curr-list")
-    //line.innerHTML= ''
-    var linearr= []
     var one= WaitList.head;
     if(one == null || one.next == null){
         line.innerHTML= "No Line"
@@ -50,18 +47,10 @@ function renderList(){
         line.innerHTML= ''
         while(one.next != null){
             var nextperson = one.next.val.f_name
-            linearr.push(nextperson)
-            console.log(linearr)
             one= one.next
-            //line.innerHTML += "<br>" + nextperson + "<br>"
+            line.innerHTML +=  nextperson + "<br>"
         }
     }
-
-        for(i=0; i<linearr.length; i++){
-            console.log(linearr[i])
-            line.innerHTML +=  linearr[i] + "<br>"
-            //line.innerText += linearr[i]
-        }
 
 }
 

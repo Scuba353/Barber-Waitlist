@@ -57,44 +57,47 @@
         <h4 class="col s0 m6">Please sign in and take a seat <br> It won't be <span class="pun">long</span> now!</h4>
 
         <div class="flex-container s3 m3 offset-m10">
-                <div class="unit">
-                    <div class="pole-unit vary">
-                        <div class="pole-top">
-                            <div class="ball"></div>
-                            <div class="cover"></div>
-                            <div class="band"></div>
-                            <div class="thin-band"></div>
-                        </div>
-                        <div class="pole-middle">
-                            <div class="container">
-                                <div class="pole"></div>
-                            </div>
-                        </div>
-                        <div class="pole-bottom">
-                            <div class="thin-band"></div>
-                            <div class="band"></div>
-                            <div class="cover"></div>
-                            <div class="ball"></div>
+            <div class="unit">
+                <div class="pole-unit vary">
+                    <div class="pole-top">
+                        <div class="ball"></div>
+                        <div class="cover"></div>
+                        <div class="band"></div>
+                        <div class="thin-band"></div>
+                    </div>
+                    <div class="pole-middle">
+                        <div class="container">
+                            <div class="pole"></div>
                         </div>
                     </div>
-                    <div class="shadow"></div>
+                    <div class="pole-bottom">
+                        <div class="thin-band"></div>
+                        <div class="band"></div>
+                        <div class="cover"></div>
+                        <div class="ball"></div>
+                    </div>
                 </div>
+                <div class="shadow"></div>
             </div>
-
+        </div>
     </div>
 
- <h3>Add Your Name to the list:</h3>
-
-  <div class="row">
-      <div class="row">
-        <div class="input-field col s3">
-            <input id="first_name" type="text" placeholder="First Name">
-            <!-- <label for="first_name">First Name</label> -->
-        </div>
-        <div class="input-field col s3">
-            <input id="last_name" type="text" placeholder="Last Name">
-            <!-- <label for="last_name">Last Name</label> -->
-        </div>
+    <div class="row">
+        <h3>Add your name to the waitlist:</h3>
+    </div>
+    <div class="row">
+        <h5>Have a seat and enjoy our complimentary refreshments!</h5>
+    </div>
+ 
+    <div class="row">
+    <div class="input-field col s4">
+        <input id="first_name" type="text" >
+        <label for="first_name">First Name</label>
+    </div>
+    <div class="input-field col s4">
+        <input id="last_name" type="text" >
+        <label for="last_name">Last Name</label>
+    </div>
 
         <!-- <div class="input-field col s4">
         <form >
@@ -122,11 +125,20 @@
   </div>
 
 
+    <div class="row right-align">
+        <h3>Next in line:</h3>
+    </div>
+    <div class="row right-align">
+        <span id="curr-client"></span><br>
+        <button class="input-field waves-light btn" id="next-client">Next</button>
+    </div>
 
-  <h2>Next in line: <span id="curr-client"></span></h2>
-  <button class="input-field waves-light btn" id="next-client">Next</button>
-
-  <h2>No <span class="pun">CUTT</span>ing in line: <br> <span id="curr-list"></span></h2>
+    <div class="row">
+        <h3>No <span class="pun">CUTT</span>ing in line: </h3><br> 
+        <span id="curr-list"></span>
+    </div>
+    
+    
 
 
     <script src="Queues.js"></script>

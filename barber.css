@@ -10,6 +10,10 @@ body {
   box-sizing: border-box;
 }
 
+.center{
+  text-align: center;
+}
+
 #add-client {
     background-color: #df5545;
 }
