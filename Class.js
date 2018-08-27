@@ -46,9 +46,10 @@ function renderList(){
     else{
         line.innerHTML= ''
         while(one.next != null){
-            var nextperson = one.next.val.f_name
+            var nextperson = one.next.val.f_name 
+            var nextlast= one.next.val.l_name 
             one= one.next
-            line.innerHTML +=  nextperson + "<br>"
+            line.innerHTML +=  nextperson + " " + nextlast + "<br>"
         }
     }
 

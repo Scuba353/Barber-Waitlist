@@ -5,6 +5,7 @@ body {
 }
 body {
   background-color: #38798038;
+  padding: 20px;
 }
 * {
   box-sizing: border-box;
